@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoopersInterest" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-pK-tyS">
+                                <rect key="frame" x="80" y="57" width="440" height="485"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="57" width="440" height="485"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-xI-vwW">
+                                <rect key="frame" x="219" y="9" width="162" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-xD-kas">
+                                <rect key="frame" x="165" y="550" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wjn-Jk-2u6"/>
+                                </constraints>
+                                <state key="normal" title="Role Model"/>
+                                <connections>
+                                    <action selector="View:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdg-ut-gix"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geu-Km-NCs">
+                                <rect key="frame" x="371" y="550" width="46" height="30"/>
+                                <state key="normal" title="Pieces"/>
+                                <connections>
+                                    <action selector="View:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTF-N9-UEV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I4F-pK-tyS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2u0-hM-Yup"/>
+                            <constraint firstItem="c1h-xI-vwW" firstAttribute="centerX" secondItem="I4F-pK-tyS" secondAttribute="centerX" id="5Tb-rX-tRE"/>
+                            <constraint firstItem="f8C-xD-kas" firstAttribute="baseline" secondItem="Geu-Km-NCs" secondAttribute="baseline" id="CSX-uh-P14"/>
+                            <constraint firstItem="f8C-xD-kas" firstAttribute="top" secondItem="I4F-pK-tyS" secondAttribute="bottom" constant="8" symbolic="YES" id="IC4-sC-og2"/>
+                            <constraint firstItem="f8C-xD-kas" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="165" id="KFE-th-fSz"/>
+                            <constraint firstAttribute="bottom" secondItem="f8C-xD-kas" secondAttribute="bottom" constant="20" symbolic="YES" id="RjB-t5-1px"/>
+                            <constraint firstItem="I4F-pK-tyS" firstAttribute="top" secondItem="c1h-xI-vwW" secondAttribute="bottom" constant="8" symbolic="YES" id="Vli-qn-BCV"/>
+                            <constraint firstItem="c1h-xI-vwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fCR-f1-zQl"/>
+                            <constraint firstItem="I4F-pK-tyS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="hFL-qO-MFj"/>
+                            <constraint firstAttribute="trailing" secondItem="Geu-Km-NCs" secondAttribute="trailing" constant="183" id="osf-yW-Zhv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Image" destination="I4F-pK-tyS" id="zN5-W3-PwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CoopersInterest" width="146" height="161"/>
+    </resources>
+</document>
