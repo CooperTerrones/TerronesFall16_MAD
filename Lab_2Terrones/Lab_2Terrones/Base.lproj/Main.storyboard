@@ -30,16 +30,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0pn-m0-NQs">
-                                <rect key="frame" x="20" y="375" width="123" height="29"/>
-                                <segments>
-                                    <segment title="Past"/>
-                                    <segment title="Present"/>
-                                </segments>
-                                <connections>
-                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZLz-UN-rvd"/>
-                                </connections>
-                            </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-De-CLT">
                                 <rect key="frame" x="267" y="375" width="51" height="31"/>
                                 <connections>
@@ -67,6 +57,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0pn-m0-NQs">
+                                <rect key="frame" x="20" y="375" width="123" height="29"/>
+                                <segments>
+                                    <segment title="Past"/>
+                                    <segment title="Present"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZLz-UN-rvd"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
