@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab_7</string>
+    <string name="name_edit">Name</string>
+    <string name="vote_button">VOTE</string>
+    <string name="result"></string>
+    <string-array name="political_parties">
+        <item>Democrat</item>
+        <item>Republican</item>
+        <item>Other</item>
+    </string-array>
+    <string name="toggle_on">Yes On 72</string>
+    <string name="toggle_off">No On 72</string>
+    <string name="absentee_switch">Absentee?</string>
+    <string name="candidate_radio1">Clinton</string>
+    <string name="candidate_radio2">Trump</string>
+    <string name="candidate_radio3">Johnson</string>
+</resources>
