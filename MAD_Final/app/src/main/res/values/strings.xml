@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MAD_Final</string>
+    <string name="title">I Scream For Ice Cream</string>
+    <string name="button">TREAT ME</string>
+    <string-array name="iceCreamType">
+        <item>death by chocolate</item>
+        <item>salted caramel</item>
+        <item>cookies and cream</item>
+    </string-array>
+    <string name="iceCream_image">Ice Cream</string>
+    <string name="dairy_choice">Dairy-free</string>
+    <string name="toggle_on">CUP</string>
+    <string name="toggle_off">CONE</string>
+    <string name="result"></string>
+</resources>
