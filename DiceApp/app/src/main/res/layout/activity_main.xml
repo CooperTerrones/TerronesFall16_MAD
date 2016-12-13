@@ -29,6 +29,7 @@
         android:textSize="32dp"
         android:layout_marginTop="40dp"
         android:text="VS"
+        android:id="@+id/tv_result"
         android:layout_height="wrap_content" />
     <ImageView
         android:layout_width="100dp"
@@ -48,6 +49,13 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:id="@+id/label"
-        android:text="CLICK TO ROLL"/>
+        android:text="CLICK PLAYER DICE TO ROLL"/>
+
+    <Button
+        android:text="INFORMATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showAlert"
+        android:id="@+id/alertButton" />
 
 </LinearLayout>

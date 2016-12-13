@@ -1,6 +1,7 @@
 package com.example.coop.diceapp;
 
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -48,14 +49,31 @@ public class MainActivity extends AppCompatActivity {
                 if (playerThrow > cpuThrow) {
                     playerPoints++;
                 }
+                if (cpuPoints >= 10.5) {
+                    cpuPoints = 0;
+                    playerPoints = 0;
+                }
+                if (playerPoints>= 10.5){
+                    cpuPoints = 0;
+                    playerPoints = 0;
+                }
+
 
                 tv_cpu.setText("CPU: " + cpuPoints);
                 tv_player.setText("YOU: " + playerPoints);
+                if (playerPoints >= 9.5){
+                    tv_player.setText("WINNER");
+                    tv_cpu.setText("LOSER");
+                }
+                if (cpuPoints >= 9.5) {
+                    tv_cpu.setText("WINNER");
+                    tv_player.setText("LOSER");
+                }
 
             }
         });
-    }
 
+    }
 
             public void setImageCPU(int num) {
                 switch (num) {
@@ -106,4 +124,13 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        }
+
+    public void showAlert(View view) {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setMessage("First to 10 wins. Game resets when winner reaches 10.")
+                .create();
+        alert.show();
+
+
+    }
+}
